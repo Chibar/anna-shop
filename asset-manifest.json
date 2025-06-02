@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/anna-shop/static/css/main.49e3ccdf.css",
+    "main.js": "/anna-shop/static/js/main.deba5f5a.js",
+    "static/js/453.e139d2b8.chunk.js": "/anna-shop/static/js/453.e139d2b8.chunk.js",
+    "index.html": "/anna-shop/index.html",
+    "main.49e3ccdf.css.map": "/anna-shop/static/css/main.49e3ccdf.css.map",
+    "main.deba5f5a.js.map": "/anna-shop/static/js/main.deba5f5a.js.map",
+    "453.e139d2b8.chunk.js.map": "/anna-shop/static/js/453.e139d2b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49e3ccdf.css",
+    "static/js/main.deba5f5a.js"
+  ]
+}
