@@ -1,111 +1,124 @@
+
+@import url('../assets/fonts/Gilroy/stylesheet.css');
+
 /* Общие стили */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Gilroy', Arial, sans-serif;
 }
 
+/* Основные стили шапки */
 .header {
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* Верхняя панель */
-.top-bar {
-  background-color: #f5f5f5;
-  padding: 10px 0;
-  font-size: 14px;
-}
-
-.top-bar-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.contact-info {
-  display: flex;
-  gap: 20px;
-}
-
-.contact-info a {
-  color: #333;
-  text-decoration: none;
-}
-
-.user-actions {
-  display: flex;
-  gap: 20px;
-}
-
-.user-actions a {
-  color: #333;
-  text-decoration: none;
-}
-
-.user-actions a:hover {
-  text-decoration: underline;
-}
-
-/* Основная шапка */
-.main-header {
   padding: 20px 0;
-  border-bottom: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
 }
 
-.header-content {
+.header.transparent {
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header:not(.transparent) {
+  background-color: white;
+}
+
+/* Контейнеры */
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 70px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
 }
 
-.logo img {
-  height: 40px;
-  width: auto;
+.header:not(.transparent) .header-container {
+  border-color: #000;
 }
 
-/* Навигация */
-.navigation ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  align-items: center;
-}
-
-.navigation li {
-  position: relative;
-}
-
-.navigation a {
-  color: #333;
+/* Логотип */
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: inherit;
   text-decoration: none;
-  font-size: 16px;
+  letter-spacing: 0.5px;
 }
 
-.navigation a:hover {
-  color: #000;
-}
-
-/* Кнопка каталога */
-.catalog-item button {
+.main-nav-wrapper {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  row-gap: 24px;
+  flex-grow: 1;
+}
+
+.main-nav {
+  width: 100%;
+}
+
+/* Основная навигация */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 5px;
-  background: none;
-  border: none;
-  font-size: 16px;
-  color: #333;
-  cursor: pointer;
+  gap: 40px;
+  margin: 0;
   padding: 0;
 }
 
-.catalog-item svg {
-  margin-top: 2px;
+.main-nav a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s;
+}
+
+.main-nav a:hover {
+  opacity: 0.8;
+}
+
+/* Кнопка каталога */
+.catalog-item {
+  position: relative;
+}
+
+.catalog-item button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background-color: #EF92B1;
+  color: #FFFFFF;
+  padding: 12px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
 /* Выпадающее меню */
@@ -128,36 +141,108 @@
   font-size: 16px;
   margin-bottom: 15px;
   font-weight: 500;
+  color: #333;
 }
 
 .dropdown-column ul {
   display: block;
+  list-style: none;
 }
 
 .dropdown-column li {
   margin-bottom: 10px;
 }
 
+.header.transparent .main-nav .dropdown-column a,
 .dropdown-column a {
   font-size: 14px;
+  color: #666;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.dropdown-column a:hover {
+  color: #000;
+}
+
+/* Контакты в шапке */
+.header-contacts {
+  display: flex;
+  gap: 60px;
+}
+
+.header-contacts .phone {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header-contacts .phone-val {
+  font-weight: 600;
+}
+
+.header-contacts .email {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.header.transparent .catalog-item button {
+  color: #EF92B1;
+  background-color: #FFFFFF;
+}
+
+/* Стили для темной темы (прозрачный хедер) */
+.header.transparent .main-nav a,
+.header.transparent .logo a,
+.header.transparent .header-contacts {
+  color: white;
+}
+
+.header:not(.transparent) .catalog-item button {
+  background-color: #EF92B1;
+  color: #fff;
+}
+
+/* Стили для светлой темы (непрозрачный хедер) */
+.header:not(.transparent) .main-nav a,
+.header:not(.transparent) .logo a {
+  color: #333;
+}
+
+.header:not(.transparent) .header-contacts {
+  color: #666;
 }
 
 /* Адаптивность */
+@media (max-width: 1200px) {
+  .header-container {
+    padding: 0 20px;
+  }
+  
+  .main-nav ul {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-nav ul {
+    gap: 15px;
+  }
+  
+  .header-contacts {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
-  .top-bar-content,
-  .header-content {
-    flex-direction: column;
-    gap: 10px;
+  .header {
+    padding: 15px 0;
   }
   
-  .navigation ul {
-    flex-wrap: wrap;
-    justify-content: center;
+  .main-nav {
+    display: none;
   }
   
-  .dropdown-menu {
-    min-width: 300px;
-    left: -50px;
-    flex-direction: column;
-  }
+  /* Здесь можно добавить стили для мобильного меню */
 }

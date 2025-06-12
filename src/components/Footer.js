@@ -1,19 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
-import logoImage from '../assets/images/logo.png'; // Путь к вашему логотипу
+
+import logoImage from '../assets/images/footer/logo.svg'
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="footer-logo">
-          <Link to="/">
-            <img src={logoImage} alt="ANNA" className="footer-logo-image" />
-          </Link>
-        </div>
+        <div className='footer-content'>
+          <div className="footer-column">
+            <Link to="/">
+              <img src={logoImage} alt="ANNA" className="footer-logo" />
+            </Link>
+          </div>
         
-        <div className="footer-content">
+
           <div className="footer-column">
             <h3>Информация</h3>
             <ul>
@@ -58,7 +60,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p className="copyright">&copy; 2025 ANNA. Все права защищены.</p>
+          
         </div>
       </div>
     </footer>
