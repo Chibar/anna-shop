@@ -34,7 +34,7 @@ const Header = ({ headerType }) => {
     <header className={headerClass}>
       <div className="header-container">
         <div className="logo">
-          <Link to="/">
+          <Link to="/anna-shop/">
             <img src={logo} alt="Логотип" />
           </Link>
         </div>

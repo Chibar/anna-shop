@@ -22,7 +22,7 @@ function App() {
         <Header headerType={headerType} />
         <main className="main-content">
           <Routes>
-            <Route path="/" element={<HomePage setHeaderType={setHeaderType} />} />
+            <Route path="/anna-shop/" element={<HomePage setHeaderType={setHeaderType} />} />
             <Route path="/category/:categoryId" element={<CategoryPage />} />
             <Route path="/product/:productId" element={<ProductPage />} />
             <Route path="/cart" element={<CartPage />} />
