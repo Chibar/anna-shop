@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
 
 import logoImage from '../assets/images/footer/logo.svg'
+import vkIcon from '../assets/images/footer/vk.png'
+import tgIcon from '../assets/images/footer/tg.png'
 
 const Footer = () => {
   return (
@@ -17,50 +19,52 @@ const Footer = () => {
         
 
           <div className="footer-column">
-            <h3>Информация</h3>
+            <h3>Покупателям</h3>
             <ul>
-              <li><Link to="/about">О нас</Link></li>
-              <li><Link to="/contacts">Контакты</Link></li>
-              <li><Link to="/delivery">Доставка и оплата</Link></li>
-              <li><Link to="/returns">Возврат</Link></li>
+              <li><Link to="/catalog">Каталог</Link></li>
             </ul>
           </div>
           
           <div className="footer-column">
-            <h3>Каталог</h3>
+            <h3>Наша одежда</h3>
             <ul>
               <li><Link to="/category/pajamas">Пижамы</Link></li>
               <li><Link to="/category/nightgowns">Сорочки</Link></li>
-              <li><Link to="/category/silk">Шелк армани</Link></li>
-              <li><Link to="/size-chart">Таблица размеров</Link></li>
             </ul>
           </div>
           
           <div className="footer-column">
-            <h3>Документы</h3>
+            <h3>О компании</h3>
             <ul>
-              <li><Link to="/privacy-policy">Политика конфиденциальности</Link></li>
-              <li><Link to="/terms">Пользовательское соглашение</Link></li>
+              <li><Link to="/about">О нас</Link></li>
+              <li><Link to="/contacts">Контакты</Link></li>
             </ul>
           </div>
           
           <div className="footer-column">
             <h3>Контакты</h3>
             <ul className="contact-info">
+              <li><Link to="tel:+7(965)-112-56-85">+7(965)-112-56-85</Link></li>
+              <li><Link to="mailto:pijamkashop@mail.ru">pijamkashop@mail.ru</Link></li>
+            </ul>
+            <ul className='contact-social'>
               <li>
-                <span>Телефон:</span>
-                <a href="tel:+79001234567">+7 (900) 123-45-67</a>
+                <Link to="https://vk.com">
+                  <img src={vkIcon} alt='vk' />
+                </Link> 
               </li>
               <li>
-                <span>Email:</span>
-                <a href="mailto:info@annashop.ru">info@annashop.ru</a>
+                <Link to="https://web.telegram.org/">
+                  <img src={tgIcon} alt='tg' />
+                </Link> 
               </li>
             </ul>
           </div>
         </div>
         
         <div className="footer-bottom">
-          
+          <Link to="/privacy-policy">Пользовательское соглашение</Link>
+          <Link to="/privacy-policy">Политика конфидициальности</Link>
         </div>
       </div>
     </footer>
