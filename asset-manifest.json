@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anna-shop/static/css/main.4f2f51f6.css",
-    "main.js": "/anna-shop/static/js/main.68a56af2.js",
+    "main.js": "/anna-shop/static/js/main.285cc59b.js",
     "static/js/453.e139d2b8.chunk.js": "/anna-shop/static/js/453.e139d2b8.chunk.js",
     "static/media/hero.png": "/anna-shop/static/media/hero.776eed64c698f6a3076b.png",
     "static/media/wide.png": "/anna-shop/static/media/wide.0363584a6c57077f11a3.png",
@@ -78,11 +78,11 @@
     "static/media/logo.svg": "/anna-shop/static/media/logo.9ea77a674715a01f13304f46399abac6.svg",
     "index.html": "/anna-shop/index.html",
     "main.4f2f51f6.css.map": "/anna-shop/static/css/main.4f2f51f6.css.map",
-    "main.68a56af2.js.map": "/anna-shop/static/js/main.68a56af2.js.map",
+    "main.285cc59b.js.map": "/anna-shop/static/js/main.285cc59b.js.map",
     "453.e139d2b8.chunk.js.map": "/anna-shop/static/js/453.e139d2b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f2f51f6.css",
-    "static/js/main.68a56af2.js"
+    "static/js/main.285cc59b.js"
   ]
 }
