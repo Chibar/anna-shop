@@ -5,7 +5,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 120px 0 80px;
+  padding: 120px 10px 80px;
   overflow: hidden;
   color: white;
 }
@@ -72,7 +72,7 @@
 
 .hero-image {
   position: absolute;
-  right: -15%;
+  right: -10%;
   top: 50%;
   transform: translateY(-50%);
   max-width: 60%;
@@ -82,7 +82,7 @@
 }
 
 .hero-image img {
-  max-height: 90%;
+  max-height: 80vh;
   width: auto;
   object-fit: contain;
   object-position: right center;
