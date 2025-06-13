@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/anna-shop/static/css/main.579e0fde.css",
-    "main.js": "/anna-shop/static/js/main.a659b50a.js",
+    "main.css": "/anna-shop/static/css/main.495570c0.css",
+    "main.js": "/anna-shop/static/js/main.87085a92.js",
     "static/js/453.e139d2b8.chunk.js": "/anna-shop/static/js/453.e139d2b8.chunk.js",
     "static/media/hero.png": "/anna-shop/static/media/hero.776eed64c698f6a3076b.png",
     "static/media/wide.png": "/anna-shop/static/media/wide.0363584a6c57077f11a3.png",
@@ -77,12 +77,12 @@
     "static/media/Gilroy-Regular.woff": "/anna-shop/static/media/Gilroy-Regular.31d54a4b841c0e438f13.woff",
     "static/media/logo.svg": "/anna-shop/static/media/logo.9ea77a674715a01f13304f46399abac6.svg",
     "index.html": "/anna-shop/index.html",
-    "main.579e0fde.css.map": "/anna-shop/static/css/main.579e0fde.css.map",
-    "main.a659b50a.js.map": "/anna-shop/static/js/main.a659b50a.js.map",
+    "main.495570c0.css.map": "/anna-shop/static/css/main.495570c0.css.map",
+    "main.87085a92.js.map": "/anna-shop/static/js/main.87085a92.js.map",
     "453.e139d2b8.chunk.js.map": "/anna-shop/static/js/453.e139d2b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.579e0fde.css",
-    "static/js/main.a659b50a.js"
+    "static/css/main.495570c0.css",
+    "static/js/main.87085a92.js"
   ]
 }
